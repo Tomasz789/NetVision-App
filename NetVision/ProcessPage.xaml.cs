@@ -21,7 +21,7 @@ namespace NetVision
     /// </summary>
     public partial class ProcessPage : Page
     {
-        private ProcessInfoViewModel vm;
+        private readonly ProcessInfoViewModel vm;
         public ProcessPage()
         {
             InitializeComponent();
