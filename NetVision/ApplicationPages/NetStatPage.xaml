@@ -31,7 +31,7 @@
         <StackPanel Orientation="Vertical"
                     Grid.Column="0">
             <Button x:Name="NetworkInfoButton" Content="Basic" Click="NetworkInfoButton_Click"/>
-            <Button x:Name="TcpConnectionPage" Content="Active Tcp connections" Click="TcpConnectionPage_Click"/>
+            <Button x:Name="TcpConnectionPage" Content="Active Connections" Click="TcpConnectionPage_Click"/>
             <Button x:Name="ProcessPage" Content="Processess"/>
         </StackPanel>
 
