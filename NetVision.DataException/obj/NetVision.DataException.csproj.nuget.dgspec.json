@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataException\\NetVision.DataException.csproj": {}
+    "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataException\\NetVision.DataException.csproj": {}
   },
   "projects": {
-    "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataException\\NetVision.DataException.csproj": {
+    "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataException\\NetVision.DataException.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataException\\NetVision.DataException.csproj",
+        "projectUniqueName": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataException\\NetVision.DataException.csproj",
         "projectName": "NetVision.DataException",
-        "projectPath": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataException\\NetVision.DataException.csproj",
+        "projectPath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataException\\NetVision.DataException.csproj",
         "packagesPath": "C:\\Users\\lacho\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataException\\obj\\",
+        "outputPath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataException\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BEs9o/g5lL6I1OfD3Q31yS3dW497DRimDF83e4T/mI6hVWzOwkoUHFJJbfYcyXG5bFn1Vyugpo3zML6TGWVT1A==",
+  "dgSpecHash": "nIao3qlFXbK7ZG06Zu27sc2xIW9FkUuqPhHbA5PhsGG8DkJJkmgk+p4pdIbTZ4wIsoimWDMCgaSgcsAq+0uUvQ==",
   "success": true,
-  "projectFilePath": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataException\\NetVision.DataException.csproj",
+  "projectFilePath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataException\\NetVision.DataException.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

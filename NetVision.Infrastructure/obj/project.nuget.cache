@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NhsiyXhcC4BwhwSanajotxdlHUeTlZuyYpnPVkOkx+JCDbPA3eP1SVEZ+2BemxMJ2Y7aHd2HZdy1T7TRk95GEQ==",
+  "dgSpecHash": "zjiPSjMYurQoK0xaPm3C8BEo9JQLrBoh8MwY5Tio3cAqPVq1zAeLpZR+oVmQoWKYIgneb0hb8lP0D9JWwf8FFg==",
   "success": true,
-  "projectFilePath": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.Infrastructure\\NetVision.Infrastructure.csproj",
+  "projectFilePath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.Infrastructure\\NetVision.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lacho\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\lacho\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

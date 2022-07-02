@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oiX3ZAXWwc7kXcLyEKWZFx51VzirSzCv0Z/YhbCrDCZcjtH9hs4EdOaxSPuKdULxjZiRFmfYHiy7xWuolC3axg==",
+  "dgSpecHash": "G2P74I3pex5U1EBPT1HmRNq2xjHJhpdEtEq414oIpRMmvDFXtAEeaccPydmwFUiFrJrk2mZPZmCaDA/ZoNH0yA==",
   "success": true,
-  "projectFilePath": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision\\NetVision.csproj",
+  "projectFilePath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision\\NetVision.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lacho\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
     "C:\\Users\\lacho\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",

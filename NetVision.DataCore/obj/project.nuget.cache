@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IsMD1u9RDoqN07LpFmM8h+jf6MSfNW2A/ZvWWnagSfpHd/aXS42YT9Y5XT/aT1MPpMyMX7+pVdCfD/uvHk9iJw==",
+  "dgSpecHash": "lMU3OMahDcMquwMEo/d6Ajgsa0/ZpB1WOi34eQvqu4MeQo29fxDANgZ4vrt2dMUEyAL5DGbW/cIoOQBWOwPJGQ==",
   "success": true,
-  "projectFilePath": "D:\\Projekty\\wpfprojects\\NV\\NetVision\\NetVision.DataCore\\NetVision.DataCore.csproj",
+  "projectFilePath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision.DataCore\\NetVision.DataCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lacho\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\lacho\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Projekty\wpfprojects\NV\NetVision\NetVision\obj\Debug\net5.0-windows\
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\
 NetVision
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\Projekty\wpfprojects\NV\NetVision\NetVision\App.xaml
+D:\Projekty\nv-app\nvProjekt\NetVision\App.xaml
 211218247890
 
 46320892355
-237-67880448
+2371433055437
 ApplicationPages\BiosInfoPage.xaml;ApplicationPages\DiagnosticsPage.xaml;ApplicationPages\HardwarePages\DriveInfoPage.xaml;ApplicationPages\HardwarePages\GeneralInfoPage.xaml;ApplicationPages\HardwarePages\PerformanceValuesWindow.xaml;ApplicationPages\HardwarePages\Plot\ChartView.xaml;ApplicationPages\HardwarePages\VisualizationPage.xaml;ApplicationPages\Home\HomePage.xaml;ApplicationPages\NetStatPage.xaml;ApplicationPages\NetworkInformationPage.xaml;ApplicationPages\Panels\DataShowPanel.xaml;ApplicationPages\PingPage.xaml;ApplicationPages\ResourcesUsagePage.xaml;ApplicationPages\TraceRoutePage.xaml;AppWindows\ChartSettingsWindow.xaml;AppWindows\HttpWindow.xaml;AppWindows\SaveFileWindow.xaml;AppWindows\TcpClientWindow.xaml;MainWindow.xaml;NetStatConnectionPage.xaml;UdpConnectionsPage.xaml;
 
 False

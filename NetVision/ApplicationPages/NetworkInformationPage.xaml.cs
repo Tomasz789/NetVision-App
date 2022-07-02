@@ -38,13 +38,13 @@ namespace NetVision.ApplicationPages
             FindNetworkCards();
             SetGeneralNetworkInformation();
             DataContext = vm;
-
-            
         }
 
         //------------------set host name, domain name and internet state
         private void SetGeneralNetworkInformation()
         {
+            txtDomain.Text = _service.GetDomainName();
+            txtHost.Text = _service.GetHostName();
             var internet_state = _service.GetInternetState();   //get internet state
             if (internet_state)
             {
@@ -164,7 +164,7 @@ namespace NetVision.ApplicationPages
         }
         private void DisplayNetworkInformation(string name)
         {
-            var card =  _service.GetInterfaceByName(name);//vm.NetworkInfos.FirstOrDefault(r => r.Name == name); //get card by name
+            var card = _service.GetInterfaceByName(name);//vm.NetworkInfos.FirstOrDefault(r => r.Name == name); //get card by name
             cardList = new List<NetworkInfoModel>();
 
             cardList.Add(card);
@@ -175,40 +175,5 @@ namespace NetVision.ApplicationPages
             AddAddresses(trvDns, card.DnsAddresses);
 
         }
-
-       private static IEnumerable<T> FindParent<T>(DependencyObject obj) where T : DependencyObject
-       {
-            IList<T> parents = new List<T>();
-            //int count = VisualTreeHelper.GetChildrenCount(obj); //get amount of children
-            var item = LogicalTreeHelper.GetChildren(obj);
-    
-            if(obj != null)
-            {
-                foreach(var i in LogicalTreeHelper.GetChildren(obj))
-                {
-                    DependencyObject dependencyObject = i as DependencyObject;
-                    if (dependencyObject != null && dependencyObject is T)
-                        yield return (T)dependencyObject;
-                }
-            }
-
-       }
-     
-
-        private void AddTextBlock(string content, StackPanel obj)
-        {
-            IList<GridViewColumn> columns = new List<GridViewColumn>();
-
-            foreach (var item in FindParent<GridViewColumn>(obj))
-                columns.Add(item);
-
-            
-            TextBlock txtBlock = new TextBlock();
-            txtBlock.Text = content;
-            obj.Children.Add(txtBlock);
-            
-        }
-
-      
     }
 }
