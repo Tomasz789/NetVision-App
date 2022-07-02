@@ -1,0 +1,9 @@
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\bin\Debug\netcoreapp3.1\NetVision.DataException.deps.json
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\bin\Debug\netcoreapp3.1\NetVision.DataException.dll
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\bin\Debug\netcoreapp3.1\NetVision.DataException.pdb
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\obj\Debug\netcoreapp3.1\NetVision.DataException.AssemblyInfoInputs.cache
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\obj\Debug\netcoreapp3.1\NetVision.DataException.AssemblyInfo.cs
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\obj\Debug\netcoreapp3.1\NetVision.DataException.csproj.CoreCompileInputs.cache
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\obj\Debug\netcoreapp3.1\NetVision.DataException.dll
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\obj\Debug\netcoreapp3.1\NetVision.DataException.pdb
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataException\obj\Debug\netcoreapp3.1\NetVision.DataException.csprojAssemblyReference.cache

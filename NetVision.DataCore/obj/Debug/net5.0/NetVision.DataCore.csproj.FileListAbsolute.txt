@@ -1,0 +1,12 @@
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\bin\Debug\net5.0\NetVision.DataCore.deps.json
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\bin\Debug\net5.0\NetVision.DataCore.dll
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\bin\Debug\net5.0\ref\NetVision.DataCore.dll
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\bin\Debug\net5.0\NetVision.DataCore.pdb
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.AssemblyInfoInputs.cache
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.AssemblyInfo.cs
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.csproj.CoreCompileInputs.cache
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.dll
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\ref\NetVision.DataCore.dll
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.pdb
+D:\Projekty\wpfprojects\NV\NetVision\NetVision.DataCore\obj\Debug\net5.0\NetVision.DataCore.csprojAssemblyReference.cache

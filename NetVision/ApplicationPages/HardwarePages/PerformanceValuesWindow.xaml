@@ -1,0 +1,73 @@
+﻿<Window x:Class="NetVision.ApplicationPages.HardwarePages.PerformanceValuesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetVision.ApplicationPages.HardwarePages"
+        xmlns:a="clr-namespace:NetVision.ViewModel.Converters"
+        mc:Ignorable="d"
+        Background="#404040"
+        Title="NV Resource Monitor" Height="640" Width="960" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            
+        </Style>
+        <a:CpuValueConverter x:Key="CpuValueConverter"/>
+    </Window.Resources>
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="cpuPlot" 
+               Grid.Column="0" 
+               Grid.Row="0"
+               Grid.RowSpan="2"
+               Margin="0,10,0,0"></Frame>
+        <Frame x:Name="ramPlot" 
+               Grid.Column="0" 
+               Grid.Row="1"
+               Grid.RowSpan="3" Margin="0,156,0,0"></Frame>
+        <Label Grid.Column="1" Grid.Row="0" Content="CPU %" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Column="1" Content="Total RAM  [MB]" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,156,0,0" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="Available RAM [%]" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,156,0,0" Grid.RowSpan="2"/>
+        <Label Content="Current Usage of RAM [MB]" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3"/>
+        <Label x:Name="labCPU" Grid.Column="2" Grid.Row="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding CPU_Usage}">
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding CPU_Usage, Converter={StaticResource CpuValueConverter}}" Value="True">
+                            <Setter Property="Foreground" Value="Red"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label x:Name="labRAM" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding RAM_Total_Usage}" Margin="0,156,0,0" Grid.RowSpan="2" />
+        <Label x:Name="labRamAv" Grid.Column="2" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding RAM_Available}" Margin="0,156,0,0" Grid.RowSpan="2">
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding }"/>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Label x:Name="labRamCurr" Grid.Column="2" Grid.Row="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="{Binding RAM_Current}" Margin="0,156,0,0" Grid.RowSpan="2"/>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3">
+            <Button x:Name="buttonChartSettings" Width="50" Height="50" Click="buttonChartSettings_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,47 @@
+﻿<Page x:Class="NetVision.ApplicationPages.HardwarePages.DriveInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      xmlns:local="clr-namespace:NetVision.ApplicationPages.HardwarePages"
+      xmlns:ViewModelWire="clr-namespace:NetVision.ViewModel"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DriveInfoPage">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label Content="Drive: " Height="50" Margin="0,0,20,0" FontSize="14"/>
+            <ComboBox Name="driveCmb" Width="50" Height="20" Margin="0,0,50,0"/>
+            <ListView x:Name="driveInfoListPanel"  Grid.Row="1" Width="400">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Name" x:Name="gV_Name"/>
+                        <GridViewColumn Header="Total space" x:Name="gv_Space_Total" />
+                        <GridViewColumn Header="Available space"  x:Name="gv_Space_Av"/>
+                        <GridViewColumn Header="Format"  x:Name="gv_Format" />
+                        <GridViewColumn Header="Directory"  x:Name="gv_Dir"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button x:Name="saveFileButton" Content="Save" Width="50" Height="50" Margin="0,0,50,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <lvc:PieChart Name="driveSpaceChart" LegendLocation="Right" Hoverable="False" Width="500">
+                <lvc:PieChart.Series>
+                    <lvc:PieSeries x:Name="lvcFreeSpace" Title="Free Space" Values="0" ></lvc:PieSeries>
+                    <lvc:PieSeries x:Name="lvcTotalSpace" Title="Total Space" Values="0" ></lvc:PieSeries>
+                </lvc:PieChart.Series>
+            </lvc:PieChart>
+            <Button x:Name="buttonCleaner" Content="Cleaner" Width="50" Height="20"/>
+
+        </StackPanel>
+       
+    </Grid>
+</Page>

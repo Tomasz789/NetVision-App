@@ -1,0 +1,108 @@
+﻿<Page x:Class="NetVision.ApplicationPages.NetworkInformationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NetVision.ApplicationPages"
+      mc:Ignorable="d" 
+      Background="#404040"
+      d:DesignHeight="470" d:DesignWidth="800"
+      Title="NetworkInformationPage">
+    <Page.Resources>
+      
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="#ffd11a" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+
+        <Style TargetType="ListView">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+        <Style TargetType="GridViewColumnHeader">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property ="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <WrapPanel x:Name="buttonsPanel" 
+                    Orientation="Horizontal" 
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2"
+                    HorizontalAlignment="Center"
+                    Margin="0,10,0,0"
+                    >
+            
+        </WrapPanel>
+        <StackPanel Orientation="Vertical"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    >
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Host name:"/>
+                <TextBlock x:Name="txtHost"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Domain name:"/>
+                <TextBlock x:Name="txtDomain"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Internet status:"/>
+                <Ellipse x:Name="statusLight" Fill="Red"
+                         Width="20" Height="20"/>
+                <TextBlock x:Name="txtNet"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <TreeView x:Name="cardTreeView"
+                  Grid.Column="3"
+                  Grid.Row="1"
+                  Margin="0,0,10,10"
+                  ItemsSource="{Binding NetworkInfoModel}">
+            <TreeViewItem x:Name="trvCardId" Header="Card Id">
+                <TreeViewItem Header="{Binding Id}"/>
+            </TreeViewItem>
+            <TreeViewItem x:Name="trvCardName" Header="Card name">
+                <TreeViewItem Header="{Binding Name}"/>
+            </TreeViewItem>
+            <TreeViewItem x:Name="trvCardDesc" Header="Description">
+                <TreeViewItem Header="{Binding Description}"/>
+            </TreeViewItem>
+            <TreeViewItem x:Name="trvCardSpeed" Header="Speed">
+                <TreeViewItem Header="{Binding Speed}"/>
+            </TreeViewItem>
+            <TreeViewItem x:Name="trvCardStatus" Header="Status">
+                <TreeViewItem Header="{Binding Status}"/>
+            </TreeViewItem>
+            <TreeViewItem x:Name="trvGateways" Header="Gateway addresses"/>
+            <TreeViewItem x:Name="trvDns" Header="DNS addresses"/>
+            <TreeViewItem x:Name="trvDhcp" Header="DHCP addresses"/>
+        </TreeView>
+    </Grid>
+</Page>

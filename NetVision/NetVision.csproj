@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApplicationPages\HardwarePages\Plot\play.png" />
+    <None Remove="ApplicationPages\HardwarePages\Plot\stop.png" />
+    <None Remove="ApplicationPages\Home\logo.png" />
+    <None Remove="ApplicationPages\iconNormal.png" />
+    <None Remove="ApplicationPages\save.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls" Version="7.0.2" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetVision.DataCore\NetVision.DataCore.csproj" />
+    <ProjectReference Include="..\NetVision.DataException\NetVision.DataException.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetVision.Infrastructure\NetVision.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ApplicationPages\HardwarePages\Plot\play.png" />
+    <Resource Include="ApplicationPages\HardwarePages\Plot\stop.png" />
+    <Resource Include="ApplicationPages\Home\logo.png" />
+    <Resource Include="ApplicationPages\iconNormal.png" />
+    <Resource Include="ApplicationPages\save.png" />
+  </ItemGroup>
+</Project>

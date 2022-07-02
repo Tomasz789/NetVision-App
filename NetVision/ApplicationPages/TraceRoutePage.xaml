@@ -1,0 +1,233 @@
+﻿<Page x:Class="NetVision.ApplicationPages.TraceRoutePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NetVision.ApplicationPages"
+      xmlns:context="clr-namespace:NetVision.DataCore.Model;assembly=NetVision.DataCore"
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" xmlns:viewmodel="clr-namespace:NetVision.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:TraceRouteViewModel}"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Background="#404040"
+      Title="TraceRoutePage">
+
+    <Page.Resources>
+       
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="#00802b"/>
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,0,0,20"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+       
+        <context:TraceEntryModel x:Key="traceModel"/>
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel 
+            x:Name="viewPanel"
+            Orientation="Vertical"
+            Grid.Column="0"
+            Grid.Row="0">
+        </StackPanel>
+        <ScrollViewer>
+            <ListView x:Name="viewMainPanel" ItemsSource="{Binding ObservableTraceList}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn  x:Name="hopColumn" Header="Hop" DisplayMemberBinding="{Binding Path=HopCounter}" Width="100"/>
+                        <GridViewColumn  x:Name="hostColumn" Header="Host" Width="100" DisplayMemberBinding="{Binding Path=HostName}"/>
+                        <GridViewColumn  x:Name="addrColumn" Header="Ip " DisplayMemberBinding="{Binding Path=Address}" Width="100"/>
+                        <GridViewColumn  x:Name="timeoutColumn" Header="Timeout" DisplayMemberBinding="{Binding Path=Timeout}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </ScrollViewer>
+        
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Height="50" ></StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center">
+            <Button x:Name="saveFileButton" Width="30" Height="30">
+                <Image Source="/ApplicationPages/save.png"/>
+            </Button>
+            <Label Content="Host" Grid.Row="1" />
+            <TextBox Text="{Binding Path=HostName, Mode=OneWayToSource, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" >
+                <Validation.ErrorTemplate>
+                    <ControlTemplate>
+                        <StackPanel>
+                            <AdornedElementPlaceholder/>
+                            <TextBlock Text="{Binding ErrorContent}"
+                                       Background="Red"
+                                       Foreground="White"
+                                       FontWeight="Bold"
+                                       FontSize="10"
+                                       Margin="5"
+                                       />
+                            
+                        </StackPanel>
+                    </ControlTemplate>
+                </Validation.ErrorTemplate>
+            </TextBox>
+            <Label Content="TTL"/>
+            <mah:NumericUpDown Value="{Binding Path=HopCounter, Mode=OneWayToSource}" Maximum="30" Minimum="1" Width="158" Foreground="White" Interval="1" Height="23"/>
+            <Label Content="Timeout"/>
+            <TextBox Text="{Binding Path=Timeout, Mode=OneWayToSource, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}">
+                <Validation.ErrorTemplate>
+                    <ControlTemplate>
+                        <StackPanel>
+                            <AdornedElementPlaceholder/>
+                            <TextBlock Text="{Binding ErrorContent}"
+                                       Background="Red"
+                                       Foreground="White"
+                                       FontWeight="Bold"
+                                       FontSize="10"
+                                       Margin="5"
+                                       />
+
+                        </StackPanel>
+                    </ControlTemplate>
+                </Validation.ErrorTemplate>
+            </TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+            <Button x:Name="btnStart" Content="Start" Click="Button_Click" Background="DarkGreen" Command="{Binding GetTraceRouteCmd}"/>
+            <Button x:Name="btnStop" Content="Stop" Background="Red"/>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="1">
+            <ItemsControl
+                Grid.Row="1"
+                    Grid.Column="0"
+                    Width="250"
+                    >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock 
+                        Text="Summary"
+                        Foreground="White"
+                        Width="Auto"
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Grid.ColumnSpan="2"
+                        Background="DarkCyan"
+                        FontWeight="Bold"
+                        
+                        />
+                    <TextBlock
+                    Grid.Row="1"
+                    Background="White"
+                    Foreground="Black"
+                    Text="Counts"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Background="White"
+                    Foreground="Black"
+                    Text="{Binding HopCounter}"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Background="White"
+                    Foreground="Black"
+                    Text="Host"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Background="White"
+                    Foreground="Black"
+                    Text="{Binding HostName}"
+                    />
+                    <TextBlock
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Background="White"
+                    Foreground="Black"
+                    Text="Avg Timeout"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Background="White"
+                    Foreground="Black"
+                    Text="{Binding AvgTimeout}"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Background="White"
+                    Foreground="Black"
+                    Text="Min Timeout [ms]"
+                    />
+                    <TextBlock
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Background="White"
+                    Foreground="Black"
+                    Text="{Binding MinTimeout}"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Background="White"
+                    Foreground="Black"
+                    Text="Max timeout [ms]"
+                    
+                    />
+                    <TextBlock
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Background="White"
+                    Foreground="Black"
+                    Text="{Binding MaxTimeout}"
+                    
+                    />
+
+                </Grid>
+
+            </ItemsControl>
+            <mah:ProgressRing
+                Margin="20,0,0,0"
+                Foreground="Goldenrod"
+                IsActive="False"
+                x:Name="progRing"/>
+        </StackPanel>
+    </Grid>
+</Page>

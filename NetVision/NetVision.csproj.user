@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="ApplicationPages\BiosInfoPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\HardwarePages\DriveInfoPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\HardwarePages\GeneralInfoPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\HardwarePages\PerformanceValuesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\HardwarePages\Plot\ChartView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\HardwarePages\VisualizationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\Home\HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\NetStatPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\Panels\DataShowPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\ResourcesUsagePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ApplicationPages\TraceRoutePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppWindows\ChartSettingsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppWindows\HttpWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppWindows\SaveFileWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AppWindows\TcpClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NetStatConnectionPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UdpConnectionsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ApplicationPages\BiosInfoPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\HardwarePages\DriveInfoPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\HardwarePages\GeneralInfoPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\HardwarePages\PerformanceValuesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\HardwarePages\Plot\ChartView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\HardwarePages\VisualizationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\Home\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\NetStatPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\Panels\DataShowPanel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\ResourcesUsagePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ApplicationPages\TraceRoutePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AppWindows\ChartSettingsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AppWindows\HttpWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AppWindows\SaveFileWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AppWindows\TcpClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NetStatConnectionPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UdpConnectionsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
