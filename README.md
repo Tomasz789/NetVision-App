@@ -45,4 +45,5 @@ Application allows save txt reports.
 4. Improve the apperance of application.
 5. Add saving data to other file type (.xml, .csv).
 6. Add unit tests for tcp client, ping, tracert and network information features.
+7. Add a dialog for resource manager - allows to set alarm values.
 
