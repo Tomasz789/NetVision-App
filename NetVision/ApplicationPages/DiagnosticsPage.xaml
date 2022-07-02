@@ -30,7 +30,6 @@
                     <Button x:Name="ShowTraceRoute" Content="Traceroute" Click="ShowTraceRoute_Click"/>
                     <Button x:Name="OpenTcpWindow" Content="Tcp Client" Click="OpenTcpWindow_Click"/>
                     <Button x:Name="OpenHttpWindow" Content="Http Client" Click="OpenHttpWindow_Click"/>
-                    <Button x:Name="OpenSoapWindow" Content="SOAP"/>
                 </StackPanel>
             </ScrollViewer>
 
