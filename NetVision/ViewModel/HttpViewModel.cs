@@ -1,5 +1,5 @@
-﻿using NetVision.DataCore.Model;
-using NetVision.Infrastructure.Files;
+﻿using NetVision.AppWindows;
+using NetVision.DataCore.Model;
 using NetVision.Infrastructure.Services;
 using NetVision.MVRelayCmds;
 using NetVision.ViewModel.PropertyUpdater;
@@ -18,13 +18,11 @@ namespace NetVision.ViewModel
         private IHttpClientService _clientService;
         private HttpResponseModel _response;
         private IList<HttpResponseModel> _list;
-        private readonly IFileService _fService;
         public HttpViewModel()
         {
             _clientService = new HttpClientService();
             _response = new HttpResponseModel();
             _list = new List<HttpResponseModel>();
-            _fService = new FileService();
             GetRequestCmd = new RelayCommand(GetValue, CanExecute);
         }
         public string Url
@@ -164,8 +162,6 @@ namespace NetVision.ViewModel
                     break;
             }
 
-            await _fService.SaveTxtFileAsync("D:\\http.txt", _response.TextValue);
-
             await Task.CompletedTask;
           
         }
@@ -175,6 +171,5 @@ namespace NetVision.ViewModel
             await Task.CompletedTask;
         }
 
-       
     }
 }
