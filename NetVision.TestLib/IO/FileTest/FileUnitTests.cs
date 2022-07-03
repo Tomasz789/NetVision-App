@@ -41,5 +41,26 @@ namespace NetVision.TestLib.IO.FileTest
             Assert.AreEqual(1, actual);
         }
 
+        [Test]
+        public async Task FileServiceOpenFileSuccessfully()
+        {
+            string path = "D:\\file.txt";
+            string actual = string.Empty;
+
+            actual = await _service.LoadFromTxtFileAsync(path);
+
+            Assert.IsNotNull(actual);
+            Assert.AreEqual("Text", actual);
+        }
+
+        [Test]
+        public async Task FileServiceOpenReturnsNull()
+        {
+            string path = null;
+
+            var actual = await _service.LoadFromTxtFileAsync(path);
+            Assert.IsNull(actual);
+        }
+
     }
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\Projekty\nv-app\nvProjekt\NetVision\App.xaml
-211218247890
+22-1955005136
 
-44-1599086136
+46-238598730
 2371433055437
-ApplicationPages\BiosInfoPage.xaml;ApplicationPages\DiagnosticsPage.xaml;ApplicationPages\HardwarePages\DriveInfoPage.xaml;ApplicationPages\HardwarePages\GeneralInfoPage.xaml;ApplicationPages\HardwarePages\PerformanceValuesWindow.xaml;ApplicationPages\HardwarePages\Plot\ChartView.xaml;ApplicationPages\HardwarePages\VisualizationPage.xaml;ApplicationPages\Home\HomePage.xaml;ApplicationPages\NetStatPage.xaml;ApplicationPages\NetworkInformationPage.xaml;ApplicationPages\Panels\DataShowPanel.xaml;ApplicationPages\PingPage.xaml;ApplicationPages\ResourcesUsagePage.xaml;ApplicationPages\TraceRoutePage.xaml;AppWindows\ChartSettingsWindow.xaml;AppWindows\HttpWindow.xaml;AppWindows\SaveFileWindow.xaml;AppWindows\TcpClientWindow.xaml;MainWindow.xaml;NetStatConnectionPage.xaml;UdpConnectionsPage.xaml;
+ApplicationPages\BiosInfoPage.xaml;ApplicationPages\DiagnosticsPage.xaml;ApplicationPages\HardwarePages\DriveInfoPage.xaml;ApplicationPages\HardwarePages\GeneralInfoPage.xaml;ApplicationPages\HardwarePages\PerformanceValuesWindow.xaml;ApplicationPages\HardwarePages\Plot\ChartView.xaml;ApplicationPages\HardwarePages\VisualizationPage.xaml;ApplicationPages\Home\HomePage.xaml;ApplicationPages\NetStatPage.xaml;ApplicationPages\NetworkInformationPage.xaml;ApplicationPages\Panels\DataShowPanel.xaml;ApplicationPages\PingPage.xaml;ApplicationPages\ResourcesUsagePage.xaml;ApplicationPages\TraceRoutePage.xaml;AppWindows\ChartSettingsWindow.xaml;AppWindows\HttpWindow.xaml;AppWindows\SaveFileWindow.xaml;AppWindows\TcpClientWindow.xaml;MainWindow.xaml;NetStatConnectionPage.xaml;ProcessPage.xaml;UdpConnectionsPage.xaml;
 
 False
 

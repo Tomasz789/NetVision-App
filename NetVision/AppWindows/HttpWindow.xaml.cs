@@ -22,14 +22,12 @@ namespace NetVision.AppWindows
     /// </summary>
     public partial class HttpWindow : Window
     {
-        private IHttpClientService _service;
         private HttpViewModel _vm;
         public HttpWindow()
         {
             InitializeComponent();
             FillComponents();
             txtAddr.Text = "https://jsonplaceholder.typicode.com/todos/1";
-            _service = new HttpClientService();
             _vm = new HttpViewModel();
             DataContext = _vm;
         }
@@ -41,29 +39,6 @@ namespace NetVision.AppWindows
             verbType.Items.Add("PUT");
             verbType.Items.Add("DELETE");
             verbType.SelectedIndex = 0;
-        }
-
-        private void buttonSend_Click(object sender, RoutedEventArgs e)
-        {
-            //Task.Factory.StartNew(SendRequestAsync);
-        }
-
-        private async void SendRequestAsync()
-        {
-
-            //HttpResponseModel model = new HttpResponseModel();
-            //var verb = verbType.SelectedValue.ToString();
-            // Uri uri = new Uri(txtAddr.Text);
-            //string url = txtAddr.Text.Trim();
-            //var res = await _service.GetRequestAsync("https://jsonplaceholder.typicode.com", "/posts");
-            //Console.WriteLine(txtAddr.Text);
-            //buttonSend.Command = new Binding("GetValue");
-            //resultPanel.Items.Add(model.TextValue);
-            //Console.WriteLine(_vm.HttpResponses.Count);
-            
-           // _vm.Method = "POST";
-            resultPanel.Items.Add(_vm.Status);
-            await Task.CompletedTask;
         }
     }
 }

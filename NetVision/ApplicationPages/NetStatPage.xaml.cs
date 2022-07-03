@@ -36,5 +36,11 @@ namespace NetVision.ApplicationPages
             var page = new NetStatConnectionPage();
             NetPagePanel.Content = page;
         }
+
+        private void ProcessPage_Click(object sender, RoutedEventArgs e)
+        {
+            var page = new ProcessPage();
+            NetPagePanel.Content = page;
+        }
     }
 }

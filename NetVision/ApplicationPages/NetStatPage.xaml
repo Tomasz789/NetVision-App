@@ -32,7 +32,7 @@
                     Grid.Column="0">
             <Button x:Name="NetworkInfoButton" Content="Basic" Click="NetworkInfoButton_Click"/>
             <Button x:Name="TcpConnectionPage" Content="Active Connections" Click="TcpConnectionPage_Click"/>
-            <Button x:Name="ProcessPage" Content="Processess"/>
+            <Button x:Name="ProcessPage" Content="Processess" Click="ProcessPage_Click"/>
         </StackPanel>
 
     </Grid>

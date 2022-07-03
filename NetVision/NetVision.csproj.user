@@ -50,6 +50,9 @@
     <Compile Update="NetStatConnectionPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ProcessPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UdpConnectionsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -101,6 +104,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="NetStatConnectionPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProcessPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UdpConnectionsPage.xaml">

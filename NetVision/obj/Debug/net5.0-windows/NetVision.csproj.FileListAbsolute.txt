@@ -241,3 +241,5 @@ D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.dll
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ref\NetVision.dll
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.genruntimeconfig.cache
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ProcessPage.g.cs
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ProcessPage.baml

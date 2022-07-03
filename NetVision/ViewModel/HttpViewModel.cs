@@ -1,4 +1,5 @@
 ﻿using NetVision.DataCore.Model;
+using NetVision.Infrastructure.Files;
 using NetVision.Infrastructure.Services;
 using NetVision.MVRelayCmds;
 using NetVision.ViewModel.PropertyUpdater;
@@ -17,12 +18,13 @@ namespace NetVision.ViewModel
         private IHttpClientService _clientService;
         private HttpResponseModel _response;
         private IList<HttpResponseModel> _list;
+        private readonly IFileService _fService;
         public HttpViewModel()
         {
             _clientService = new HttpClientService();
             _response = new HttpResponseModel();
             _list = new List<HttpResponseModel>();
-            _response.Url = "https://jsonplaceholder.typicode.com/todos/1";
+            _fService = new FileService();
             GetRequestCmd = new RelayCommand(GetValue, CanExecute);
         }
         public string Url
@@ -87,6 +89,19 @@ namespace NetVision.ViewModel
             }
         }
 
+        public string TextValue
+        {
+            get
+            {
+                return _response.TextValue;
+            }
+            set
+            {
+                _response.TextValue = value;
+                OnPropertyChanged("TextValue");
+            }
+        }
+
         public string Method
         {
             get
@@ -97,6 +112,19 @@ namespace NetVision.ViewModel
             {
                 _response.Method = value;
                 OnPropertyChanged("Method");
+            }
+        }
+
+        public HttpResponseModel Model
+        {
+            get
+            {
+                return _response;
+            }
+            set
+            {
+                _response = value;
+                OnPropertyChanged("ResponseModel");
             }
         }
         public IList<HttpResponseModel> HttpResponses
@@ -123,7 +151,7 @@ namespace NetVision.ViewModel
             switch(_response.Method)
             {
                 case "GET":
-                    await _clientService.GetRequestAsync(_response.Url);
+                    _response = await _clientService.GetRequestAsync(_response.Url);
                      break;
                 case "POST":
                     await _clientService.PostReqestAsync(_response.Url, _response.Content);
@@ -135,14 +163,14 @@ namespace NetVision.ViewModel
                     await _clientService.PutRequestAsync(_response.Url, _response.Content);
                     break;
             }
-            // _response = await _clientService.GetRequestAsync(_response.Url, "/posts");
-           // await _clientService.PostReqestAsync(_response.Url, _response.Content);
+
+            await _fService.SaveTxtFileAsync("D:\\http.txt", _response.TextValue);
+
             await Task.CompletedTask;
           
         }
         public async void GetValue(object parameter)
         {
-            //var res = await _clientService.GetRequestAsync("https://jsonplaceholder.typicode.com", "/posts");
             await ExecuteRequest();
             await Task.CompletedTask;
         }

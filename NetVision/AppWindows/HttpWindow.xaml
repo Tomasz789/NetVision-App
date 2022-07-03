@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NetVision.AppWindows"
         mc:Ignorable="d"
-        Background="#404040"  DataContext="HttpResponseModel"
+        Background="#404040"
         Title="HttpWindow" Height="450" Width="800">
         
     <Window.Resources>
@@ -15,7 +15,6 @@
             <Setter Property="Height" Value="40"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontWeight" Value="Bold"/>
-
         </Style>
     </Window.Resources>
     <Grid>
@@ -45,17 +44,17 @@
                          AcceptsReturn="True"
                          TextWrapping="Wrap"
                          CaretBrush="Black"
-                         Text="{Binding Content}"/>
+                         Text="{Binding Path=Content}"/>
         </StackPanel>
             <StackPanel  Orientation="Horizontal" Grid.Row="0" Grid.Column="1" Margin="10,0,10,0" >
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                    <ComboBox Name="verbType" Width="100" Height="30" SelectedValue="{Binding Method}"/>
-                    <TextBox x:Name="txtAddr" Width="200" Height="30" Margin="50,0,0,0" Background="White" Foreground="Black" Text="{Binding Url, Mode=OneWay}"/>
-                <Button x:Name="buttonSend" Content="Send" Click="buttonSend_Click"  Command="{Binding GetRequestCmd}"/>
+                    <ComboBox Name="verbType" Width="100" Height="30" SelectedValue="{Binding Path=Method}"/>
+                    <TextBox x:Name="txtAddr" Width="200" Height="30" Margin="50,0,0,0" Background="White" Foreground="Black" Text="{Binding Path=Url, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button x:Name="buttonSend" Content="Send" Command="{Binding Path=GetRequestCmd}"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Margin="10,0,0,0" >
-                <ListBox x:Name="resultPanel" Width="530" Height="300" Background="White" Foreground="Black" ItemsSource="{Binding TextValue}"/>
+                <TextBox x:Name="resultPanel" Width="530" Height="300" Background="White" Foreground="Black" Text="{Binding Path=TextValue, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             </StackPanel>
         </Grid>
 </Window>
