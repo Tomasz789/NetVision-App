@@ -8,6 +8,7 @@ namespace NetVision.Infrastructure.Files
     public interface IFileService
     {
         Task<int> SaveTxtFileAsync(string path, string text);
+        Task<string> LoadFromTxtFileAsync(string path);
         Task SaveXmlFileAsync(string path, List<string> attributes);
     }
 }

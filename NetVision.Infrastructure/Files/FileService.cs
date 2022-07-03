@@ -13,6 +13,35 @@ namespace NetVision.Infrastructure.Files
         private readonly string text = "";
 
         /// <summary>
+        /// Allows to open file and read his content.
+        /// </summary>
+        /// <param name="path">File path.</param>
+        /// <returns></returns>
+        public async Task<string> LoadFromTxtFileAsync(string path)
+        {
+            string result = string.Empty;
+            byte [] buffer; //buffer purposed for storing content bytes
+
+            if (string.IsNullOrEmpty(path))
+            {
+                return null;
+            }
+
+            var filePath = Path.Combine(startPath, path);
+
+            using (var fo = File.OpenRead(filePath))
+            {
+                buffer = new byte[fo.Length];   //create new instance to byte array with fo filestream length
+                await fo.ReadAsync(buffer, 0, buffer.Length);
+                fo.Close();
+            }
+
+            result = Encoding.UTF8.GetString(buffer);
+            await Task.CompletedTask;
+            return await Task.FromResult(result);
+        }
+
+        /// <summary>
         /// Async task allows to save file in .txt format.
         /// </summary>
         /// <param name="fpath">Path file.</param>
