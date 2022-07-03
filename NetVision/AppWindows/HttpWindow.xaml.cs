@@ -22,7 +22,8 @@ namespace NetVision.AppWindows
     /// </summary>
     public partial class HttpWindow : Window
     {
-        private HttpViewModel _vm;
+        private readonly HttpViewModel _vm;
+        private SaveFileWindow fWin;
         public HttpWindow()
         {
             InitializeComponent();
@@ -30,6 +31,25 @@ namespace NetVision.AppWindows
             txtAddr.Text = "https://jsonplaceholder.typicode.com/todos/1";
             _vm = new HttpViewModel();
             DataContext = _vm;
+            btnSave.Click += SaveValueToTxtFile;
+            buttonSend.Click += RefreshWindow;
+        }
+
+        private void RefreshWindow(object sender, RoutedEventArgs e)
+        {
+            resultPanel.AppendText(_vm.TextValue);
+        }
+
+        private void SaveValueToTxtFile(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(_vm.TextValue))
+            {
+                MessageBox.Show("Nothing to save.");
+                return;
+            }
+
+            fWin = new SaveFileWindow(_vm.TextValue);
+            fWin.Show();
         }
 
         private void FillComponents()
@@ -38,7 +58,9 @@ namespace NetVision.AppWindows
             verbType.Items.Add("POST");
             verbType.Items.Add("PUT");
             verbType.Items.Add("DELETE");
-            verbType.SelectedIndex = 0;
+            verbType.SelectedIndex = 1;
         }
+
+
     }
 }
