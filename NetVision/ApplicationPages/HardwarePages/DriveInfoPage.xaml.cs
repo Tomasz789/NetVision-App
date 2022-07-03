@@ -2,6 +2,8 @@
 using NetVision.AppWindows;
 using NetVision.DataCore.Model;
 using NetVision.Infrastructure.Services.HardwareServ;
+using NetVision.Infrastructure.Services.ProcessService;
+using NetVision.Infrastructure.Services.ProcessService.Types;
 using NetVision.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -115,6 +117,10 @@ namespace NetVision.ApplicationPages.HardwarePages
                 driveCmb.Items.Add(drive.Name);
         }
 
-
+        private void buttonCleaner_Click(object sender, RoutedEventArgs e)
+        {
+            var cleanerLaunch = new ProcessLauncher(ProcessTypes.CLEANMGR);
+            cleanerLaunch.LaunchProcess();
+        }
     }
 }
