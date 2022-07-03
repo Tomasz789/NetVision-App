@@ -35,6 +35,10 @@ used for traceroute, ping and TCP/Http client.
 
 ![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/res.JPG)
 
+8. Getting active process:
+
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/processapp.JPG)
+
 Application allows save txt reports.
 
 ## TODO
