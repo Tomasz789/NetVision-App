@@ -26,7 +26,7 @@ used for traceroute, ping and TCP/Http client.
 
 5. "Tracert" implementation:
 
-![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/tracert.JPG)
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/txracert.JPG)
 
 6. Basic Tcp client:
 
