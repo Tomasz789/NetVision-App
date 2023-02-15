@@ -5,6 +5,7 @@ This app allows to obtain information about network (like available networks and
 Besides app contains a resource manager - allows to monitor a percentage usage of CPU and RAM, available drives memory usage. Other features are implemented as small applications
 used for traceroute, ping and TCP/Http client.
 
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/home.JPG)
 ## Some features
 
 1. Basic network information:
