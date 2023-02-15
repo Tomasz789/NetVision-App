@@ -14,7 +14,6 @@ namespace NetVision.Infrastructure.Services.ProcessService
     public sealed class ProcessLauncher
     {
         private readonly ProcessTypes type;
-        private readonly string[] processList = new string[3] { "taskmgr", "cleanmgr", "control"};
         public ProcessLauncher(ProcessTypes processTypes)
         {
             type = processTypes;
@@ -28,9 +27,23 @@ namespace NetVision.Infrastructure.Services.ProcessService
         {
             string currentProcess = string.Empty;
 
-            currentProcess = string.Concat(type.ToString().ToLowerInvariant(), ".exe");
+            if (type != ProcessTypes.DEVMGMT)
+            {
+                currentProcess = string.Concat(type.ToString().ToLowerInvariant(), ".exe");
+            }
+            else
+            {
+                currentProcess = type.ToString();
+            }
 
-            Process.Start(currentProcess);
+            var info = new ProcessStartInfo(currentProcess)
+            {
+                Verb = "runAs",
+                CreateNoWindow = true,
+                UseShellExecute = true,
+            };
+
+            Process.Start(info);
 
            /* try
             {

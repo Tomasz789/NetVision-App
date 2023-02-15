@@ -1,6 +1,7 @@
 ﻿
 using NetVision.ApplicationPages;
 using NetVision.ApplicationPages.Home;
+using NetVision.Infrastructure.Services.ProcessService.Types;
 using NetVision.ViewModel;
 using System;
 using System.Collections.Generic;

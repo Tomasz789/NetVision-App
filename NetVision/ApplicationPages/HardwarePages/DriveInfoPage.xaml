@@ -39,7 +39,7 @@
                     <lvc:PieSeries x:Name="lvcTotalSpace" Title="Total Space" Values="0" ></lvc:PieSeries>
                 </lvc:PieChart.Series>
             </lvc:PieChart>
-            <Button x:Name="buttonCleaner" Content="Cleaner" Width="50" Height="20"/>
+            <Button x:Name="buttonCleaner" Content="Cleaner" Width="50" Height="20" Click="buttonCleaner_Click"/>
 
         </StackPanel>
        

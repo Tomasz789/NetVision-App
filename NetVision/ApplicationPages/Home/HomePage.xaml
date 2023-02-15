@@ -23,9 +23,10 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-            <Image Source="/ApplicationPages/Home/logo.png" Width="500" Height="310"/>
-            <TextBlock Text="v. 1.0.0"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Image Source="/ApplicationPages/wifiIcon.png" Width="100" Height="100"/>
+            <TextBlock Margin="20,20,10,10" Text="NET VISION" Foreground="Gold" FontSize="40" FontWeight="Bold"/>
         </StackPanel>
         <WrapPanel Orientation="Horizontal"
                    HorizontalAlignment="Center"

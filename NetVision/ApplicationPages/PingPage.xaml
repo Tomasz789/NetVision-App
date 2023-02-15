@@ -26,13 +26,13 @@
         <ListView x:Name="list" Height="300" VerticalAlignment="Top" Grid.Row="0" ItemsSource="{Binding PingModel}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Witryna" Width="100" DisplayMemberBinding="{Binding Host}"/>
-                    <GridViewColumn Header="Adres" DisplayMemberBinding="{Binding Address}" Width="100"/>
-                    <GridViewColumn Header="Czas " DisplayMemberBinding="{Binding Timeout}" Width="50"/>
+                    <GridViewColumn Header="Page" Width="100" DisplayMemberBinding="{Binding Host}"/>
+                    <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Address}" Width="100"/>
+                    <GridViewColumn Header="Time " DisplayMemberBinding="{Binding Timeout}" Width="50"/>
                     <GridViewColumn Header="Status" Width="50" DisplayMemberBinding="{Binding State}"/>
                     <GridViewColumn Header="TTL " DisplayMemberBinding="{Binding TTL}" Width="100"/>
-                    <GridViewColumn Header="Wielkość bufora danych" DisplayMemberBinding="{Binding BufferLength}" Width="150"/>
-                    <GridViewColumn Header="Dane" Width="50" DisplayMemberBinding="{Binding Data}"/>
+                    <GridViewColumn Header="Buffer size" DisplayMemberBinding="{Binding BufferLength}" Width="150"/>
+                    <GridViewColumn Header="Data" Width="50" DisplayMemberBinding="{Binding Data}"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -41,15 +41,15 @@
             <TextBox x:Name="ipAddTxt" Width="100" Height="20" Text="{Binding Address}"/>
             <Label Content="TTL" Width="44" RenderTransformOrigin="0.125,0.61" />
             <mah:NumericUpDown Value="{Binding TTL}" />
-            <Label Content="Dane" />
+            <Label Content="Data" />
             <TextBox Width="50" Height="20" Text="{Binding Data}" />
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
-            <Label Content="Powt." />
+            <Label Content="Repeat" />
                 <TextBox Name="cmbCounts" Width="50" Height="20" Text="{Binding Counts}" />
                     <Label Content="Timeout"/>
                     <TextBox x:Name="timeoutTxt" Width="50" Height="20" Text="{Binding Timeout}" />
-            <Button x:Name="btnGetPing" Content="Ping" Background="#30D5C8 " FontWeight="Bold" FontSize="14" Grid.Row="1" Width="100" Height="50" Click="btnGetPing_Click" Command="{Binding Path=GetPingCommand}" Margin="20,0,0,0" CommandParameter="4" Foreground="White" />
+            <Button x:Name="btnGetPing" Content="Ping" Background="#30D5C8" FontWeight="Bold" FontSize="14" Grid.Row="1" Width="100" Height="50" Click="btnGetPing_Click" Command="{Binding Path=GetPingCommand}" Margin="20,0,0,0" CommandParameter="4" Foreground="White" />
             <Button x:Name="saveFile" Content="Save" Margin="20,0,0,0" Background="#30D5C8 " Click="saveFile_Click" Foreground="White" Width="50" Height="50"/>
         </StackPanel>
     </Grid>

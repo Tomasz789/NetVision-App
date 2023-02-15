@@ -54,12 +54,11 @@ namespace NetVision.Infrastructure.Services.Protocols
                 SaveFileLog((DateTime.Now.ToString() + ": During establishing the tcp " + " an error was occurred: "
                     + se.Message.ToString() + " cannot establish connection!"));
                 SocketModel.InfoMsg = "Connection Error: " + se.Message.ToString();
-               // isConnected = false;
                 SocketModel.IsConnected = false;
             }
             finally
             {
-                _tcpClient.Close();
+                //_tcpClient.Close();
                 reader.Close();
                 writer.Close();
             }
@@ -99,7 +98,7 @@ namespace NetVision.Infrastructure.Services.Protocols
                     if (_tcpClient.Available == 0)
                         break;
                 }
-                if (SocketModel.IsConnected == true)
+                if (SocketModel.IsConnected)
                 {
                     reader = new BinaryReader(_tcpClient.GetStream()); //create a new binary reader using tcp stream
                     writer = new BinaryWriter(_tcpClient.GetStream()); //create a new binary writer

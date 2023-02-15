@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G2P74I3pex5U1EBPT1HmRNq2xjHJhpdEtEq414oIpRMmvDFXtAEeaccPydmwFUiFrJrk2mZPZmCaDA/ZoNH0yA==",
+  "dgSpecHash": "Kw4/5ZJyDMdNZN8JbXZ7Rt9fA5jwinmUhjXVt19gALA34gRi23CarZW49YhDXBaXL3r0bvisKR6EqPvqMfNqSA==",
   "success": true,
   "projectFilePath": "D:\\Projekty\\nv-app\\nvProjekt\\NetVision\\NetVision.csproj",
   "expectedPackageFiles": [
@@ -51,7 +51,8 @@
     "C:\\Users\\lacho\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\lacho\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
     "C:\\Users\\lacho\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
-    "C:\\Users\\lacho\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+    "C:\\Users\\lacho\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\lacho\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": [
     {

@@ -50,6 +50,7 @@
                     <Style.Triggers>
                         <DataTrigger Binding="{Binding CPU_Usage, Converter={StaticResource CpuValueConverter}}" Value="True">
                             <Setter Property="Foreground" Value="Red"/>
+                            <Setter Property="FontSize" Value="16"/>
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>
@@ -60,7 +61,10 @@
             <Label.Style>
                 <Style TargetType="{x:Type Label}">
                     <Style.Triggers>
-                        <DataTrigger Binding="{Binding }"/>
+                        <DataTrigger Binding="{Binding }">
+                            <Setter Property="Foreground" Value="Red"/>
+                            <Setter Property="FontSize" Value="16"/>
+                        </DataTrigger>
                     </Style.Triggers>
                 </Style>
             </Label.Style>

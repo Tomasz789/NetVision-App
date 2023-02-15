@@ -15,7 +15,7 @@ namespace NetVision.TestLib.IO.XMLTests
         [Test]
         public void ObjectIsSerialized_Test()
         {
-            var model = new XmlExampleModel() { Id = 1, Price = 24.95M, Title = "Pride and Prejudice" };
+            var model = new XmlExampleModel() { Id = 1, Price = 24.95M, Title = "Pride and Prejudice", Currency="USD" };
             var serializer = new XmlSerializationHelper<XmlExampleModel>();
             var actual = serializer.SerializeData(model, "D:\\myFile.xml");
             Assert.AreEqual(1, actual);

@@ -23,7 +23,6 @@ D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\bin\Debug\net5.0\NetVision
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\bin\Debug\net5.0\NetVision.DataException.dll
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\bin\Debug\net5.0\NetVision.DataCore.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\bin\Debug\net5.0\NetVision.DataException.pdb
-D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.csprojAssemblyReference.cache
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.AssemblyInfoInputs.cache
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.AssemblyInfo.cs
@@ -32,3 +31,4 @@ D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.dll
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\ref\NetVision.Infrastructure.dll
 D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.pdb
+D:\Projekty\nv-app\nvProjekt\NetVision.Infrastructure\obj\Debug\net5.0\NetVision.Infrastructure.csproj.AssemblyReference.cache

@@ -32,7 +32,6 @@
             <TabItem>
                 <TabItem.Header>
                     <TextBlock Text="TCP"
-                               Background="#30D5C8"
                                Foreground="White"
                                FontWeight="Bold"
                                Height="20"
@@ -70,7 +69,6 @@
             <TabItem>
                 <TabItem.Header>
                     <TextBlock Text="UDP"
-                               Background="#30D5C8"
                                Foreground="White"
                                FontWeight="Bold"
                                TextAlignment="Center"/>
@@ -106,7 +104,6 @@
             <TabItem>
                 <TabItem.Header>
                     <TextBlock Text="TCP IPv4"
-                               Background="#30D5C8"
                                Foreground="White"
                                FontWeight="Bold"
                                TextAlignment="Center"/>

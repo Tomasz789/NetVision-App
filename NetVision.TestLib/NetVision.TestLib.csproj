@@ -16,4 +16,8 @@
     <ProjectReference Include="..\NetVision.Infrastructure\NetVision.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="IO\TCPTests\" />
+  </ItemGroup>
+
 </Project>

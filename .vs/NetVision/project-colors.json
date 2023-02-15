@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "39a1ce98-5c33-4fc4-a9f3-35029ee967e1": {
+      "ProjectGuid": "39a1ce98-5c33-4fc4-a9f3-35029ee967e1",
+      "DisplayName": "NetVision",
+      "ColorIndex": 0
+    },
+    "aca402f1-8ec1-49d0-85de-24679fc7660f": {
+      "ProjectGuid": "aca402f1-8ec1-49d0-85de-24679fc7660f",
+      "DisplayName": "NetVision.Infrastructure",
+      "ColorIndex": 1
+    },
+    "cdd42d22-a3fd-4fd9-b7fd-cf315bfaf429": {
+      "ProjectGuid": "cdd42d22-a3fd-4fd9-b7fd-cf315bfaf429",
+      "DisplayName": "NetVision.TestLib",
+      "ColorIndex": 2
+    },
+    "b604b842-e2f7-4756-b8ac-6a1e2d95303c": {
+      "ProjectGuid": "b604b842-e2f7-4756-b8ac-6a1e2d95303c",
+      "DisplayName": "NetVision.DataCore",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

@@ -63,9 +63,9 @@
                     Grid.Row="2"
                     >
 
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                 <Label Content="Host name:"/>
-                <TextBlock x:Name="txtHost"/>
+                <TextBlock x:Name="txtHost" FontSize="16"/>
             </StackPanel>
             
             <StackPanel Orientation="Horizontal">
@@ -76,7 +76,7 @@
                 <Label Content="Internet status:"/>
                 <Ellipse x:Name="statusLight" Fill="Red"
                          Width="20" Height="20"/>
-                <TextBlock x:Name="txtNet"/>
+                <TextBlock x:Name="txtNet" FontSize="20"/>
             </StackPanel>
         </StackPanel>
         

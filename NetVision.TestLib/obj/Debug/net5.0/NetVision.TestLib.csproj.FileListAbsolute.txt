@@ -284,7 +284,6 @@ D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\bin\Debug\net5.0\NetVision.Infras
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\bin\Debug\net5.0\NetVision.Infrastructure.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\bin\Debug\net5.0\NetVision.DataCore.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\bin\Debug\net5.0\NetVision.DataException.pdb
-D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.csprojAssemblyReference.cache
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.AssemblyInfoInputs.cache
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.AssemblyInfo.cs
@@ -294,3 +293,4 @@ D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLi
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\ref\NetVision.TestLib.dll
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.genruntimeconfig.cache
+D:\Projekty\nv-app\nvProjekt\NetVision.TestLib\obj\Debug\net5.0\NetVision.TestLib.csproj.AssemblyReference.cache

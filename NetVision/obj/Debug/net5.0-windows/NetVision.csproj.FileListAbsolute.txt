@@ -183,7 +183,6 @@ D:\Projekty\nv-app\nvProjekt\NetVision\bin\Debug\net5.0-windows\NetVision.Infras
 D:\Projekty\nv-app\nvProjekt\NetVision\bin\Debug\net5.0-windows\NetVision.DataCore.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision\bin\Debug\net5.0-windows\NetVision.DataException.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision\bin\Debug\net5.0-windows\NetVision.Infrastructure.pdb
-D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.csprojAssemblyReference.cache
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ApplicationPages\BiosInfoPage.g.cs
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ApplicationPages\DiagnosticsPage.g.cs
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ApplicationPages\HardwarePages\DriveInfoPage.g.cs
@@ -243,3 +242,9 @@ D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.pdb
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.genruntimeconfig.cache
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ProcessPage.g.cs
 D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ProcessPage.baml
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ApplicationPages\ProcessLauncherPage.g.cs
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\ApplicationPages\ProcessLauncherPage.baml
+D:\Projekty\nv-app\nvProjekt\NetVision\bin\Debug\net5.0-windows\ApplicationPages\wifiPic.png
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision.csproj.AssemblyReference.cache
+D:\Projekty\nv-app\nvProjekt\NetVision\obj\Debug\net5.0-windows\NetVision_Content.g.cs
+D:\Projekty\nv-app\nvProjekt\NetVision\bin\Debug\net5.0-windows\ApplicationPages\wifiIcon.png

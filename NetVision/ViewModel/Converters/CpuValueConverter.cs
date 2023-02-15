@@ -15,7 +15,7 @@ namespace NetVision.ViewModel.Converters
             bool isCpuInRange = false;
             try
             {
-                if ((float)value >= 0.0)
+                if ((float)value >= 90.0)
                 {
                     isCpuInRange = true;
                 }
@@ -23,7 +23,6 @@ namespace NetVision.ViewModel.Converters
             catch (ArgumentException argEx)
             {
                 isCpuInRange = false;
-                throw new Exception(argEx.Message);
             }
             return isCpuInRange; 
         }

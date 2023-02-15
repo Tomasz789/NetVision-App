@@ -20,12 +20,12 @@
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="buttonMainPage" Content="Główna" Grid.Column="0" />
+        <Button x:Name="buttonMainPage" Content="Home" Grid.Column="0" />
         <Button x:Name="buttonInfos" Content="Info" Grid.Column="1"/>
         <Button x:Name="buttonBiosInfo" Content="Bios" Grid.Column="2" />
-        <Button x:Name="buttonDiagnostics" Content="Diagnostyka" Grid.Column="3" />
-        <Button x:Name="buttonMonitor" Content="Zasoby" Grid.Column="4"/>
-        <Button x:Name="buttonHelp" Content="Pomoc" Grid.Column="5"/>
+        <Button x:Name="buttonDiagnostics" Content="Diagnostics" Grid.Column="3" />
+        <Button x:Name="buttonMonitor" Content="Resources" Grid.Column="4"/>
+        <Button x:Name="buttonHelp" Content="About" Grid.Column="5"/>
         <Frame x:Name="PagePanel" NavigationUIVisibility="Hidden"  Grid.Row="1" Grid.ColumnSpan="6" />
     </Grid>
 </Window>

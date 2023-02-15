@@ -13,6 +13,7 @@
     <None Remove="ApplicationPages\Home\logo.png" />
     <None Remove="ApplicationPages\iconNormal.png" />
     <None Remove="ApplicationPages\save.png" />
+    <None Remove="ApplicationPages\wifiIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,5 +37,13 @@
     <Resource Include="ApplicationPages\Home\logo.png" />
     <Resource Include="ApplicationPages\iconNormal.png" />
     <Resource Include="ApplicationPages\save.png" />
+    <Content Include="ApplicationPages\wifiIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="ApplicationPages\wifiPic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
