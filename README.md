@@ -41,7 +41,7 @@ used for traceroute, ping and TCP/Http client.
 ![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/processes.JPG)
 
 9. Active UDP Connections:
-![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/udpconnections.JPG)
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/updconnections.JPG)
 
 
 Application allows save txt reports.
