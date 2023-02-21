@@ -23,13 +23,13 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ListView x:Name="list" Height="300" VerticalAlignment="Top" Grid.Row="0" ItemsSource="{Binding PingModel}">
+        <ListView x:Name="list" Height="300" VerticalAlignment="Top" Grid.Row="0" ItemsSource="{Binding PingInfoList}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Page" Width="100" DisplayMemberBinding="{Binding Host}"/>
                     <GridViewColumn Header="Address" DisplayMemberBinding="{Binding Address}" Width="100"/>
                     <GridViewColumn Header="Time " DisplayMemberBinding="{Binding Timeout}" Width="50"/>
-                    <GridViewColumn Header="Status" Width="50" DisplayMemberBinding="{Binding State}"/>
+                    <GridViewColumn Header="State" Width="50" DisplayMemberBinding="{Binding State}"/>
                     <GridViewColumn Header="TTL " DisplayMemberBinding="{Binding TTL}" Width="100"/>
                     <GridViewColumn Header="Buffer size" DisplayMemberBinding="{Binding BufferLength}" Width="150"/>
                     <GridViewColumn Header="Data" Width="50" DisplayMemberBinding="{Binding Data}"/>
@@ -40,8 +40,8 @@
             <Label Content="Host" Width="50" Height="41" RenderTransformOrigin="0.593,0.255" />
             <TextBox x:Name="ipAddTxt" Width="100" Height="20" Text="{Binding Address}"/>
             <Label Content="TTL" Width="44" RenderTransformOrigin="0.125,0.61" />
-            <mah:NumericUpDown Value="{Binding TTL}" />
-            <Label Content="Data" />
+            <mah:NumericUpDown Value="{Binding TTL}" Height="50" />
+            <Label Content="Data" RenderTransformOrigin="0.497,0.596" />
             <TextBox Width="50" Height="20" Text="{Binding Data}" />
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
