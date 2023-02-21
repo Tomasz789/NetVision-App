@@ -64,15 +64,5 @@ namespace NetVision.Infrastructure.Files
 
             return 1;   
         }
-
-        public async Task SaveXmlFileAsync(string path, List<string> attributes)
-        {
-            XmlDocument xml_doc = new XmlDocument();
-            XmlDeclaration xmlDeclaration = xml_doc.CreateXmlDeclaration("1.0", "UTF-8", null); //create a new xml ver. 1.0, encoding UTF-8
-            XmlElement root_element = xml_doc.DocumentElement;
-            xml_doc.InsertBefore(xmlDeclaration, root_element);
-            XmlElement main_attr_elem = xml_doc.CreateElement(string.Empty, "Attribute", string.Empty);
-            await Task.CompletedTask;
-        }
     }
 }
