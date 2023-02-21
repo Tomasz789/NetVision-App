@@ -30,46 +30,24 @@ namespace NetVision.ApplicationPages
     {
         private PingViewModel vm;
         private IPingInfoService _service;
-        private List<PingModel> _pingInfoList;
 
         public PingPage()
         {
             InitializeComponent();
-
-            FillComponents();
-            _service = new PingInfoService();
-            vm = new PingViewModel(_service);
+            vm = new PingViewModel();
             DataContext = vm;
             saveFile.IsEnabled = false;
         }
 
-        private void FillComponents()
-        {
-            //fill counts combobox
-            //for (int i = 1; i <= 4; ++i)
-              //  cmbCounts.Items.Add(i);
-            //cmbCounts.SelectedIndex = 3;
-        }
-
         private void btnGetPing_Click(object sender, RoutedEventArgs e)
         {
-            PingOptions options = new PingOptions();
-
-            // _service.SendPing(ipAddTxt.Text, Encoding.ASCII.GetBytes("aaaa"), Convert.ToInt32(timeoutTxt.Text), options);
-            // _pingInfoList.Add(vm.PingInfo);
-            /*list.Items.Add("Adres: " + vm.PingInfo.Address.ToString() + " czas: " + vm.PingInfo.Timeout.ToString()
-                + "ms" + "TTL: "+ " wielkosć danych: " + "vm.BufferLength.ToString()");*/
-        
             if(vm.PingInfoList != null && vm.PingInfoList.Count > 0)
                 list.ItemsSource = vm.PingInfoList;
             saveFile.IsEnabled = true;
-            //list.Items.Add(vm.PingInfoList.ElementAt(0).Address);
         }
 
         private void saveFile_Click(object sender, RoutedEventArgs e)
         {
-            var text_builder = new StringBuilder();
-            int cnt = list.Items.Count;
             int avg_timeout = 0;
             int initial_timeout = 0;
 
@@ -78,7 +56,7 @@ namespace NetVision.ApplicationPages
                 initial_timeout += vm.TTL;
             }
             if (vm.Counts != 0)
-                avg_timeout = (int)(initial_timeout / vm.Counts);
+                avg_timeout = (initial_timeout / vm.Counts);
   
             string txtToSave = "Host: " + vm.Host + " adress: " + vm.Address + " Average timeout: " + avg_timeout + " ms" +
                 " Data Length: " + vm.BufferLength + " bits ";
