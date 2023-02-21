@@ -5,15 +5,16 @@ This app allows to obtain information about network (like available networks and
 Besides app contains a resource manager - allows to monitor a percentage usage of CPU and RAM, available drives memory usage. Other features are implemented as small applications
 used for traceroute, ping and TCP/Http client.
 
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/home.JPG)
 ## Some features
 
 1. Basic network information:
 
-![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/basic_info.JPG)
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/networkinginfo.JPG)
 
 2. Active TCP connections
 
-![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/connections.JPG)
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/tcpconnections.JPG)
 
 3. Information about drive memory usage:
 
@@ -37,7 +38,11 @@ used for traceroute, ping and TCP/Http client.
 
 8. Getting active process:
 
-![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/processapp.JPG)
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/processes.JPG)
+
+9. Active UDP Connections:
+![Image](https://github.com/Tomasz789/NetVision-App/blob/master/Img/updconnections.JPG)
+
 
 Application allows save txt reports.
 
@@ -47,7 +52,7 @@ Application allows save txt reports.
 2. Implement GUI of Http client.
 3. Add communication real time communication in TCP client.
 4. Improve the apperance of application.
-5. Add saving data to other file type (.xml, .csv).
+5. Add saving data to other file type (.xml [Done], .csv).
 6. Add unit tests for tcp client, ping, tracert and network information features.
 7. Add a dialog for resource manager - allows to set alarm values.
 
