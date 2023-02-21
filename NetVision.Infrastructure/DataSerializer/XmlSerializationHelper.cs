@@ -31,15 +31,5 @@ namespace NetVision.Infrastructure.DataSerializer
 
             return 1;
         }
-
-        public bool ValidateData(T dataObject)
-        {
-            if (dataObject is not T)
-            {
-                return false;
-            }
-
-            return true;
-        }
     }
 }

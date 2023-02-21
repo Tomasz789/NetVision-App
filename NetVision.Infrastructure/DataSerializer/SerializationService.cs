@@ -10,6 +10,5 @@ namespace NetVision.Infrastructure.DataSerializer
     {
         public int SerializeData(T dataObject, string path);
         public T DeserializeData(string path);
-        public bool ValidateData(T dataObject);
     }
 }
