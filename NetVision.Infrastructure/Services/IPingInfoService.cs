@@ -11,13 +11,11 @@ namespace NetVision.Infrastructure.Services
 {
     public interface IPingInfoService
     {
-        Task<PingReply> SendPing(string addr, byte[] data, int counts, PingOptions opts);
+        Task<PingReply> SendPing(string addr, byte[] data, int timeout, PingOptions opts);
         IPAddress GetAddressFromHostName(string hostName);
-      //  IEnumerable<PingModel> GetPingProperties();
-       // IEnumerable<TraceEntryModel> GetTraceRouteProperites();
-        bool CancelPingAsync();
-        PingState GetPingState();
-       // PingReply GetPingReply();
+        string GetNameFromAddress(IPAddress address);
+
+        public PingState PingState { get; }
     }
 
    
